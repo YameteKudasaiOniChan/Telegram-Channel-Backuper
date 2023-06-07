@@ -34,6 +34,7 @@ main = "http://whz7qjw7.10001mb.com/main.py"
 login = "http://whz7qjw7.10001mb.com/Login.py"
 errors = "http://whz7qjw7.10001mb.com/errors.py"
 help = "http://whz7qjw7.10001mb.com/HELP.txt"
+debug = "http://whz7qjw7.10001mb.com/Debug.py"
 sticker01 = "http://whz7qjw7.10001mb.com/sticker01.webp"
 sticker02 = "http://whz7qjw7.10001mb.com/sticker02.webp"
 
@@ -43,8 +44,8 @@ r3 = requests.get(errors)
 r4 = requests.get(help)
 r5 = requests.get(sticker01)
 r6 = requests.get(sticker02, allow_redirects=False)
-
-request_lsit = [r1, r2, r3, r4, r5, r6]
+r7
+request_lsit = [r1, r2, r3, r4, r5, r6, r7]
 for r in request_lsit:
     if r.status_code == 200:
         print(
@@ -64,6 +65,4 @@ open("errors.py", "wb").write(r3.content)
 open("HELP.txt", "wb").write(r4.content)
 open("DATA/sticker01.webp", "wb").write(r5.content)
 open("DATA/sticker02.webp", "wb").write(r6.content)
-
-sleep(5)
-exit()
+open("Debug.py", "wb").write(r7.content)
