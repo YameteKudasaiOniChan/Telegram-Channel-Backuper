@@ -38,13 +38,13 @@ debug = "http://whz7qjw7.10001mb.com/Debug.py"
 sticker01 = "http://whz7qjw7.10001mb.com/sticker01.webp"
 sticker02 = "http://whz7qjw7.10001mb.com/sticker02.webp"
 
-r1 = requests.get(main)
-r2 = requests.get(login)
-r3 = requests.get(errors)
-r4 = requests.get(help)
-r5 = requests.get(sticker01)
+r1 = requests.get(main, allow_redirects=False)
+r2 = requests.get(login, allow_redirects=False)
+r3 = requests.get(errors, allow_redirects=False)
+r4 = requests.get(help, allow_redirects=False)
+r5 = requests.get(sticker01, allow_redirects=False)
 r6 = requests.get(sticker02, allow_redirects=False)
-r7
+r7 = requests.get(debug, allow_redirects=False)
 request_lsit = [r1, r2, r3, r4, r5, r6, r7]
 for r in request_lsit:
     if r.status_code == 200:
