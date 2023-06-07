@@ -20,7 +20,7 @@ It creates a new channel and forwards all the messages of the desired channel in
 7. After getting and placing the numerical ID of the desired channel, run the `main.py` file and wait
 
 
-If you have any problem, contact me via [Telegram][https://t.me/Yamete_Kudasai_Oni_Chan] or [email][mohammadche2000@gmail.com]
+If you have any problem, contact me via [https://t.me/Yamete_Kudasai_Oni_Chan][Telegram] or [mohammadche2000@gmail.com][email]
 
 
 *The program works correctly on personal Telegram accounts, provided that the account is joined to the desired channel
