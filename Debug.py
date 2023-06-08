@@ -1,7 +1,13 @@
 from colorama import Fore, Back
+import platform
 import requests
 import os
 
+
+if platform.system() == "Windows":
+    os.system("cls")
+if platform.system() == "Linux":
+    os.system("clear")
 try:
     os.mkdir("DATA")
 except:
